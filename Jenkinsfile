@@ -2,7 +2,7 @@ node {
     
     stage('checkout')
     {
-        git 'git 'https://github.com/devendra0818/AssignJenkins'
+        echo 'Check out'
     }
     stage('build')
     {
