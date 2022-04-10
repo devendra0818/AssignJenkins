@@ -1,15 +1,11 @@
-node {
-    
-    stage('checkout')
-    {
-        echo 'Check out'
-    }
-    stage('build')
-    {
-        echo 'This is build command'
-    }
-    stage('DevDeploy')
-    {
-        echo 'This is DevDeply command'
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
 }
